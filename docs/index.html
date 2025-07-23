@@ -5,97 +5,179 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>No Lift System x AFP</title>
   <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/AFP-FULL.png?v=1753306439">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
-    @media (max-width: 1024px) {
-      .afp-flex-wrap { flex-direction: column !important; }
-      .afp-col { width: 100% !important; min-height: auto !important; }
-      .afp-wrapper { height: auto !important; }
-      .co-brand-bar {
-        width: 100% !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-        gap: 12px !important;
-        text-align: center;
-        margin-bottom: 16px !important;
-      }
-      .co-brand-bar img { max-height: 40px !important; }
-      .review-block {
-        width: 100% !important;
-        background: transparent !important;
-        padding: 0 !important;
-        box-shadow: none !important;
-        border-radius: 0 !important;
-      }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f7f4;
+      color: #1a4120;
     }
+
+    .top-banner {
+      background: #1a4120;
+      color: #fff;
+      padding: 10px 16px;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .co-brand-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .co-brand-bar img {
+      max-height: 48px;
+      height: auto;
+    }
+
+    .afp-flex-wrap {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .afp-col {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .afp-wrapper {
+      justify-content: space-between;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(26, 65, 32, 0.1);
+    }
+
+    .contact-box img {
+      border-radius: 10px;
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+      background: white;
+      padding: 6px;
+    }
+
+    .contact-info h4,
+    .contact-info p,
+    .contact-info a {
+      color: #1a4120;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      display: block;
+      font-size: 0.9rem;
+    }
+
+    .review-block {
+      background: #ffffff;
+      border-left: 4px solid #e07c00;
+      border-radius: 8px;
+      padding: 12px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      margin-bottom: 12px;
+    }
+
+    .review-block p {
+      font-style: italic;
+      margin: 0;
+    }
+
     .estimator-term-row {
       padding: 6px 0;
       border-bottom: 1px solid #e0e0e0;
     }
+
     .estimator-term-row:last-child {
       border-bottom: none;
     }
-    .review-block {
-      width: 33%;
-      padding: 12px;
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+
+    input[type="range"] {
+      width: 100%;
     }
-    .review-flex { display: flex; gap: 12px; flex-wrap: nowrap; }
+
+    @media (max-width: 1024px) {
+      .afp-flex-wrap { flex-direction: column; }
+      .afp-col { width: 100%; }
+      .review-flex { flex-direction: column; }
+    }
   </style>
 </head>
-<body style="margin: 0; font-family: sans-serif;">
-  <div style="max-width: 1100px; margin: 0 auto;">
-    <div style="display: flex;">
-      <div class="co-brand-bar" style="width: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 12px; gap: 12px; margin-left: 0;">
-        <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/No-Lift-Install-Logo-Full.webp?v=1753306212" alt="No Lift System" style="max-height: 48px; height: auto;">
-        <span style="font-weight: 500; font-size: 0.9rem; color: #444;">With Financing Powered By</span>
-        <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/AFP-FULL.png?v=1753306439" alt="AFP" style="max-height: 48px; height: auto;">
-      </div>
-    </div>
+<body>
+
+  <div class="top-banner">
+    A Financing Partnership Powered by American Financial Partners
   </div>
 
-  <div class="afp-flex-wrap" style="display: flex; flex-wrap: nowrap; gap: 20px; align-items: stretch; max-width: 1100px; margin: 0 auto;">
-    <div class="afp-col" style="width: 50%; display: flex; flex-direction: column;">
-      <div style="background: #f9f9f9; border-radius: 16px; padding: 16px 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
-        <iframe
-          src="https://form.jotform.com/251807213758157"
-          title="Apply for Financing - No Lift System"
-          width="100%"
-          style="min-height: 700px; aspect-ratio: 1 / 1.25; border: none; border-radius: 12px; background: #f9f9f9;"
-          frameborder="0"
-          scrolling="no"
-          allowtransparency="true"
-          allow="geolocation; microphone; camera; fullscreen; payment"
-        ></iframe>
-      </div>
+  <div class="container">
+    <div class="co-brand-bar">
+      <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/No-Lift-Install-Logo-Full.webp?v=1753306212" alt="No Lift System">
+      <span style="font-weight: 500; font-size: 0.95rem;">With Financing Powered By</span>
+      <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/AFP-FULL.png?v=1753306439" alt="AFP">
     </div>
 
-    <div class="afp-col afp-wrapper" style="width: 50%; display: flex; flex-direction: column; justify-content: space-between; border-radius: 16px; background: #f9f9f9; box-shadow: 0 2px 6px rgba(0,0,0,0.08); padding: 16px 20px;">
-      <div>
-        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
-          <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/AFP-FULL.png?v=1753306439" alt="AFP" style="border-radius: 10px; width: 72px; height: 72px; object-fit: contain; background: white; padding: 6px;">
-          <div>
-            <h4 style="margin: 0; color: #3f4d4d;">Need Help?</h4>
-            <p style="margin: 4px 0 8px 0; font-size: 0.95rem;"><strong>American Financial Partners</strong></p>
-            <a href="mailto:info@afp-ef.com" style="text-decoration: none; color: #3f4d4d; font-size: 0.9rem;">📧 info@financewithafp.com</a><br>
-            <a href="tel:8882373533" style="text-decoration: none; color: #3f4d4d; font-size: 0.9rem;">📞 888-237-3533</a>
-          </div>
+    <div class="afp-flex-wrap">
+      <!-- FORM PANEL -->
+      <div class="afp-col">
+        <div style="background: #ffffff; border-radius: 12px; padding: 16px 20px; box-shadow: 0 2px 6px rgba(26, 65, 32, 0.1);">
+          <iframe
+            src="https://form.jotform.com/251807213758157"
+            title="Apply for Financing - No Lift System"
+            width="100%"
+            style="min-height: 700px; border: none; border-radius: 12px;"
+            frameborder="0"
+            scrolling="no"
+            allowtransparency="true"
+            allow="geolocation; microphone; camera; fullscreen; payment"
+          ></iframe>
         </div>
-        <hr style="border: none; border-top: 1px solid #dcdcdc; margin: 0 0 16px 0;">
-        <h4 style="margin-top: 0; color: #3f4d4d;">🧮 Estimate Your Monthly Payment</h4>
-        <label for="equipmentSlider" style="display: block; margin-bottom: 6px; color: #3f4d4d; font-size: 0.9rem;">
-          Equipment Cost: <span id="equipmentValue">$50,000</span>
-        </label>
-        <input type="range" id="equipmentSlider" min="5000" max="250000" step="1000" value="50000" class="estimator-slider" style="width: 100%; margin-bottom: 12px;">
-        <div id="paymentResults" style="color: #3f4d4d; font-size: 0.95rem;"></div>
-        <h5 style="margin-top: 16px; font-size: 0.95rem; color: #3f4d4d;">What Customers Are Saying:</h5>
-        <div id="afp-reviews" class="review-flex" style="min-height: 80px;"></div>
       </div>
-      <p style="font-size: 0.75rem; color: #6a7a7a; margin: 16px 0 0 0;">
-        *Estimated payments are based on standard lease factors and are for illustration only. Actual terms may vary based on credit.
-      </p>
+
+      <!-- INFO + CALCULATOR -->
+      <div class="afp-col afp-wrapper">
+        <div>
+          <div class="contact-box" style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+            <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/AFP-FULL.png?v=1753306439" alt="AFP">
+            <div class="contact-info">
+              <h4 style="margin: 0;">Need Help?</h4>
+              <p style="margin: 4px 0 8px 0;"><strong>American Financial Partners</strong></p>
+              <a href="mailto:info@financewithafp.com">📧 info@financewithafp.com</a>
+              <a href="tel:8882373533">📞 888-237-3533</a>
+            </div>
+          </div>
+
+          <hr style="border: none; border-top: 1px solid #dcdcdc; margin-bottom: 16px;">
+
+          <h4 style="margin-top: 0;">🧮 Estimate Your Monthly Payment</h4>
+          <label for="equipmentSlider" style="display: block; margin-bottom: 6px;">
+            Equipment Cost: <span id="equipmentValue">$50,000</span>
+          </label>
+          <input type="range" id="equipmentSlider" min="5000" max="250000" step="1000" value="50000">
+          <div id="paymentResults" style="margin-top: 12px;"></div>
+
+          <h5 style="margin-top: 24px;">What Customers Are Saying:</h5>
+          <div id="afp-reviews" class="review-flex" style="min-height: 80px;"></div>
+        </div>
+
+        <p style="font-size: 0.75rem; color: #1a4120; margin-top: 16px;">
+          *Estimated payments are based on standard lease factors and are for illustration only. Actual terms may vary based on credit.
+        </p>
+      </div>
     </div>
   </div>
 
@@ -149,10 +231,7 @@
         const r = reviews[(index + i) % reviews.length];
         html += `
           <div class="review-block">
-            <p style="margin-bottom: 12px;">
-              <span style="color: #666; font-style: italic;">“${r.text}”</span><br>
-              <strong>– ${r.name}</strong>
-            </p>
+            <p>“${r.text}”<br><strong>– ${r.name}</strong></p>
           </div>
         `;
       }
@@ -165,3 +244,4 @@
   </script>
 </body>
 </html>
+

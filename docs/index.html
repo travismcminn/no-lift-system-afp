@@ -191,7 +191,11 @@
     }
 
     function calculatePayments(equipmentCost) {
-      const leaseFactors = { 36: 0.033, 48: 0.026, 60: 0.022 };
+      const leaseFactors = {
+        36: 0.03222,
+        48: 0.02512,
+        60: 0.02052
+      };
       let results = '';
       for (const term in leaseFactors) {
         const factor = leaseFactors[term];
